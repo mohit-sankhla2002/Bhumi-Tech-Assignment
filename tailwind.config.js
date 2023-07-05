@@ -11,6 +11,9 @@ export default {
       padding: {
         section: "100px",
       },
+      boxShadow: {
+        bs1: "0px 11px 27px 0px #00C6D759"
+      }
     },
   },
   plugins: [],
