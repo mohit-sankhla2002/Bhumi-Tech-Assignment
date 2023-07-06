@@ -5,6 +5,7 @@ import BestDeals from './components/Sections/BestDeals';
 import ClassifiedProducts from './components/Sections/ClassifiedProducts';
 import Recommended from './components/Sections/Recommended';
 import FlashSale from './components/Sections/FlashSale';
+import HotSale from './components/Sections/HotSale';
 const App = () => {
   return (
     <>
@@ -14,6 +15,7 @@ const App = () => {
       <ClassifiedProducts />
       <Recommended />
       <FlashSale />
+      <HotSale />
     </>
   )
 }

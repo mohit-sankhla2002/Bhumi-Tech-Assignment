@@ -3,7 +3,7 @@ import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import HeroSlide from '../HeroSlide';
-import { EffectCoverflow, Pagination, Navigation} from 'swiper/modules';
+import { EffectCoverflow, Pagination, Navigation, Autoplay} from 'swiper/modules';
 const Hero = () => {
     return (
         <Swiper
@@ -21,13 +21,17 @@ const Hero = () => {
                 enabled: true,
                 clickable: true
             }}
-            loop={true}
-            autoplay={true}
+            loop={"true"}
+            autoplay={{
+                enabled: true, 
+                delay: 5000,
+            }}
+            delay={3000}
             navigation={{
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev'
             }}
-            modules={[EffectCoverflow, Pagination, Navigation]}
+            modules={[EffectCoverflow, Pagination, Navigation, Autoplay]}
             className="mySwiper"
         >
             <SwiperSlide><HeroSlide /></SwiperSlide>
