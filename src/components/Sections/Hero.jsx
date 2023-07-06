@@ -1,15 +1,42 @@
-import {register} from 'swiper/element/bundle';
-import slide from '../../assets/slide.png';
-import 'swiper/css'
+import {Swiper, SwiperSlide} from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/effect-coverflow';
+import 'swiper/css/pagination';
+import HeroSlide from '../HeroSlide';
+import { EffectCoverflow, Pagination, Navigation} from 'swiper/modules';
 const Hero = () => {
-    register();
-    return <swiper-container slides-per-view="1" loop="true" autoplay="true">
-        <swiper-slide><img src={slide} /></swiper-slide>
-        <swiper-slide><div className="h-full bg-green-600">Slide 2</div></swiper-slide>
-        <swiper-slide><div className="h-full bg-green-600">Slide 3</div></swiper-slide>
-        <swiper-slide><div className="h-full bg-green-600">Slide 4</div></swiper-slide>
-        <swiper-slide><div className="h-full bg-green-600">Slide 5</div></swiper-slide>
-    </swiper-container>
+    return (
+        <Swiper
+            effect={'coverflow'}
+            grabCursor={true}
+            centeredSlides={true}
+            slidesPerView={'1'}
+            coverflowEffect={{
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                slideShadows: false,
+            }}
+            pagination={{
+                enabled: true,
+                clickable: true
+            }}
+            loop={true}
+            autoplay={true}
+            navigation={{
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev'
+            }}
+            modules={[EffectCoverflow, Pagination, Navigation]}
+            className="mySwiper"
+        >
+            <SwiperSlide><HeroSlide /></SwiperSlide>
+            <SwiperSlide><HeroSlide /></SwiperSlide>
+            <SwiperSlide><HeroSlide /></SwiperSlide>
+            <SwiperSlide><HeroSlide /></SwiperSlide>
+        </Swiper>
+
+    );
 }
 
 export default Hero;
