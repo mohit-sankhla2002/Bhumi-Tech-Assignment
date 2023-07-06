@@ -11,8 +11,12 @@ export default {
       padding: {
         section: "100px",
       },
+      margin: {
+        section: "100px"
+      },
       boxShadow: {
-        bs1: "0px 11px 27px 0px #00C6D759"
+        bs1: "0px 11px 27px 0px #00C6D759",
+        bs2: "0px 9px 26px 0px rgba(0, 0, 0, 0.2)"
       }
     },
   },

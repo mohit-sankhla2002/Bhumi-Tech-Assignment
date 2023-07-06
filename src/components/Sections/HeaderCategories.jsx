@@ -12,7 +12,7 @@ const HeaderCategories = () => {
           <div className='flex gap-2 mr-6' onClick={toggleCategories}>
             <span className='font-light'>All Categories</span> <img src={downArrow} />
           </div>
-          {openCategories && <div className='absolute top-[30px] bg-lightGray  left-0 w-full rounded-b-lg shadow-lg flex flex-col'>
+          {openCategories && <div className='z-10 absolute top-[30px] bg-lightGray  left-0 w-full rounded-b-lg shadow-lg flex flex-col'>
           {categories.map(category => (<div key={category.id} className='text-sm p-2 hover:bg-gray-400 transition-all duration-75 ease'>{category.text}</div>))}
           </div>}
       </div>

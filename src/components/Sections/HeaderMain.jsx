@@ -22,7 +22,7 @@ const HeaderMain = () => {
       {/* Dropdown */}
       <div className='relative flex flex-col items-center'>
         <button className='flex gap-2 items-center px-5 py-3 bg-lightGray rounded-[12px]' onClick={toggleDropdown}>Classifieds<img src={downArrow} /></button>
-        {isOpen && (<div className='absolute w-full bg-lightGray top-[50px] rounded-b-lg'>
+        {isOpen && (<div className='z-10 absolute w-full bg-lightGray top-[50px] rounded-b-lg'>
           <div className='rounded-[12px] w-full px-5 py-3'>Option-1</div>
           <div className='rounded-[12px] w-full px-5 py-3'>Option-2</div>
           <div className='rounded-[12px] w-full px-5 py-3'>Option-3</div>
