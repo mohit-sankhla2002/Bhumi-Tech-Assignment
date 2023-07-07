@@ -1,11 +1,17 @@
 import React, {useRef} from 'react'
 import ButtonFilled from '../components/UI/ButtonFilled';
-
+import { auth } from '../firebase';
+import {createUserWithEmailAndPassword} from 'firebase/auth'
+import { useNavigate } from 'react-router-dom';
+import { useDispatch, useSelector } from 'react-redux';
+import { setActiveUser } from '../store/slices/userSlice';
+import { Link } from 'react-router-dom';
 function Signup() {
+    const dispatch = useDispatch();
     const emailRef = useRef();
     const passRef = useRef();
     const confirmPassRef = useRef();
-
+    const nav = useNavigate();
     const signupHandler = () => {
         const email = emailRef.current.value;
         const pass = passRef.current.value;
@@ -14,7 +20,15 @@ function Signup() {
         if (pass !== confirmPass) {
             return;
         }
-
+        createUserWithEmailAndPassword(auth, email, pass).then((userCredential) => {
+            dispatch(setActiveUser({
+                email: userCredential.user.email,
+                uid: userCredential.user.uid,
+            }));
+            nav('/');
+        }).catch((err) => {
+            console.log(err);
+        })
         console.log(email, pass, confirmPass);
     };
     return (
@@ -27,6 +41,7 @@ function Signup() {
             <label htmlFor="confirmPass" className='text-xl font-medium'>Confirm Password</label>
             <input type='password' ref={confirmPassRef} className='p-2 text-xl border-2 shadow-lg border-lightBlue rounded-xl' id='confirmPass' />
             <ButtonFilled className={`mt-10`} onClick={signupHandler}>Signup</ButtonFilled>
+            <Link className='text-center text-lg font-medium text-darkBlue mt-4' to={'/login'}>Already Have an Account? Log In</Link>
         </div>
     )
 }

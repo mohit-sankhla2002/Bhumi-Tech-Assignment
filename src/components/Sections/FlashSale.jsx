@@ -1,13 +1,15 @@
 import React from 'react'
 import flashProducts from '../../constants/flash-product'
 import FlashProduct from '../FlashProduct';
+import Countdown from '../Countdown';
 function FlashSale() {
+  const targetDate = new Date('2023-07-31T23:59:59')
   return (
     <div className='flash-sale bg-darkBlue m-section shadow-bs2 flex items-center gap-4 border-2 border-blue-700'>
         <div className='flex flex-col max-w-[350px] gap-6 justify-between'>
             <h1 className='text-white text-5xl font-semibold'>Flash Sale</h1>
               <p className='text-white text-sm'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
-            <h1 className='text-white text-5xl font-semibold'>05 : 42 : 19 : 54</h1> { /* Days | Hours | Minutes | Seconds */ }
+            <Countdown className='text-white text-5xl font-semibold' date={targetDate} />
         </div>
 
         <div className='flex flex-col'>

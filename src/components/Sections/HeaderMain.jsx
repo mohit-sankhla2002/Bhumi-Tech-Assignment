@@ -8,8 +8,10 @@ import Cart from '../UI/Cart';
 import ButtonFilled from '../UI/ButtonFilled';
 import { Link } from 'react-router-dom';
 import { toggleCartActions } from '../../store/slices/toggleCartSlice';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
+
 const HeaderMain = () => {
+  const uid = useSelector(state => state.user.uid);
   const [isOpen, setIsOpen] = useState(false);
   const dispatch = useDispatch();
   const toggleDropdown = () => {
@@ -45,7 +47,7 @@ const HeaderMain = () => {
 
       {/* Options */}
 
-      <div className='flex p-2 items-center gap-4'>
+      {uid && <div className='flex p-2 items-center gap-4'>
         <Link to={'/wishlist'}>
           <img src={heart} className='gap-2 w-[28px]'/> 
         </Link>
@@ -53,9 +55,10 @@ const HeaderMain = () => {
         <Link to={'/user'}>
           <img src={user} className='gap-2 w-[28px]'/> 
         </Link>
-      </div>
+      </div>}
 
       {/* Button */}
+      {!uid && <Link to={'/login'}><ButtonFilled>Login</ButtonFilled></Link>}
 
       <ButtonFilled>Classifieds</ButtonFilled>
     </div>
