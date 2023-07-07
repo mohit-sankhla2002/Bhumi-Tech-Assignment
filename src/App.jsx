@@ -4,6 +4,7 @@ import Login from './pages/Login';
 import Signup from './pages/Signup';
 import { Routes, Route } from 'react-router-dom';
 import Layout from './layouts/authLayout';
+
 function App() {
   return (
     <Routes>
