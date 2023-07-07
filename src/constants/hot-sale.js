@@ -1,5 +1,5 @@
 // Photo imports
-import beanBag from '../assets/beanBag.png'
+import beanBag from '../assets/beanbag.png'
 import monitor from '../assets/monitor.png'
 import laptop from '../assets/laptop3.png'
 import ps5 from '../assets/ps5(1).png'
