@@ -3,7 +3,9 @@ import star from '../assets/star.svg'
 import ButtonHollow from './UI/ButtonHollow';
 import { cartActions } from '../store/slices/cartSlice';
 import { useDispatch } from 'react-redux';
+import { useSelector } from 'react-redux';
 function HotSaleProduct({ id,  img, title, originalPrice, discountedPrice, rating }) {
+    const uid = useSelector(state => state.user.uid);
     const dispatch = useDispatch();
     const addToCartHandler = () => {
         dispatch(cartActions.addItem({
@@ -28,7 +30,7 @@ function HotSaleProduct({ id,  img, title, originalPrice, discountedPrice, ratin
                         <img src={star} />
                     </span>
                 </div>
-                <ButtonHollow onClick={addToCartHandler} className={`w-full rounded-[12px] mt-4 text-sm py-2`}>Add to Cart</ButtonHollow>
+                {uid && <ButtonHollow onClick={addToCartHandler} className={`w-full rounded-[12px] mt-4 text-sm py-2`}>Add to Cart</ButtonHollow>}
             </div>
         </div>
     )
