@@ -23,7 +23,7 @@ function HotSale() {
                     spaceBetween={10}
                 >
                     {hotSale.map((product, index) => {
-                        return <SwiperSlide key={index}> <HotSaleProduct img={product.img} title={product.name} rating={product.rating} originalPrice={product.originalPrice} discountedPrice={product.discountedPrice} discountBanner={product.discountBanner} /></SwiperSlide>;
+                        return <SwiperSlide key={index}> <HotSaleProduct id={product.id} img={product.img} title={product.name} rating={product.rating} originalPrice={product.originalPrice} discountedPrice={product.discountedPrice} discountBanner={product.discountBanner} /></SwiperSlide>;
                     })}
                 </Swiper>
                 <RightArrowButton className={`hs-right-arrow-button`} />

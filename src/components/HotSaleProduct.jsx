@@ -1,7 +1,18 @@
 import React from 'react'
 import star from '../assets/star.svg'
 import ButtonHollow from './UI/ButtonHollow';
-function HotSaleProduct({ img, title, originalPrice, discountedPrice, rating }) {
+import { cartActions } from '../store/slices/cartSlice';
+import { useDispatch } from 'react-redux';
+function HotSaleProduct({ id,  img, title, originalPrice, discountedPrice, rating }) {
+    const dispatch = useDispatch();
+    const addToCartHandler = () => {
+        dispatch(cartActions.addItem({
+            id, 
+            title, 
+            price: discountedPrice
+        }));
+    };
+
     return (
         <div className='recommended-product flex flex-col justify-between'>
             <div className='px-2 pt-2 w-full h-full'>
@@ -17,7 +28,7 @@ function HotSaleProduct({ img, title, originalPrice, discountedPrice, rating }) 
                         <img src={star} />
                     </span>
                 </div>
-                <ButtonHollow className={`w-full rounded-[12px] mt-4 text-sm py-2`}>Add to Cart</ButtonHollow>
+                <ButtonHollow onClick={addToCartHandler} className={`w-full rounded-[12px] mt-4 text-sm py-2`}>Add to Cart</ButtonHollow>
             </div>
         </div>
     )
