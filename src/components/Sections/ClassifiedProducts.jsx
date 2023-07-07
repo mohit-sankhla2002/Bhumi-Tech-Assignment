@@ -28,7 +28,7 @@ function ClassifiedProducts() {
         prevEl: '.cp-swiper-button-prev'
       }}
       >
-        {classifiedProducts.map(product => <SwiperSlide><ClassifiedProduct key={product.id} img={product.img} title={product.name} price={product.price} location={product.location} /></SwiperSlide>)}
+        {classifiedProducts.map(product => <SwiperSlide key={product.id}><ClassifiedProduct img={product.img} title={product.name} price={product.price} location={product.location} /></SwiperSlide>)}
         </Swiper>
     </div>
   )

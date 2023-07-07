@@ -26,3 +26,40 @@ body {
     border-radius: 30px;
     padding: 60px;
 }
+
+#explore-classifieds {
+    background: url('./assets/ExploreClassifieds.png');
+}
+
+#add-classifieds {
+    background: url('./assets/AddClassifieds.png');
+}
+
+#explore-products {
+    background: url('./assets/ExploreProducts.png');
+}
+
+#partner-with-us {
+    background: url('./assets/PartnerWithUs.png');
+}
+
+.info-card {
+    height: 280px;
+    width: 100%;
+    background-size: cover;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 30px;
+}
+
+.social-media {
+    width: 20px;
+}
+
+.social-media-container {
+    padding: 10px;
+    border-radius: 12px;
+    background-color: #F8F8F8;
+}

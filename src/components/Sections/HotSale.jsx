@@ -19,7 +19,6 @@ function HotSale() {
                         prevEl: '.hs-left-arrow-button',
                         nextEl: '.hs-right-arrow-button',
                     }}
-                    loop={true}
                     slidesPerView={5}
                     spaceBetween={10}
                 >
