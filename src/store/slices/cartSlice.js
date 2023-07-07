@@ -2,7 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
     items: [],
-    totalAmount: 0
+    totalAmount: 0,
 };
 
 const cartSlice = createSlice({
@@ -11,7 +11,7 @@ const cartSlice = createSlice({
     reducers: {
         addItem(state, {payload}) {
             console.log(payload);
-            const {title, price, id} = payload;
+            const {title, price, id, isFlashItem} = payload;
             const idx = state.items.findIndex((itm) => (itm.id === +id));
 
             console.log(idx);
@@ -21,7 +21,8 @@ const cartSlice = createSlice({
                     id: id, 
                     title: title, 
                     price: price, 
-                    quantity: 1
+                    quantity: 1,
+                    isFlashItem: isFlashItem || false
                 }
 
                 state.items.push(newItem);

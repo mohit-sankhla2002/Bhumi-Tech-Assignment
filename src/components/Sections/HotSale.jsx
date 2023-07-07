@@ -8,7 +8,7 @@ import hotSale from '../../constants/hot-sale';
 import HotSaleProduct from '../HotSaleProduct';
 function HotSale() {
     return (
-        <div className='flex flex-col px-section py-4 gap-4'>
+        <div className='flex flex-col px-section my-14 gap-4'>
             <h1 className='text-xl font-medium'>Hot Sale!</h1>
             <div className='flex gap-1 py-10 items-center justify-center'>
                 <LeftArrowButton className={`hs-left-arrow-button`} />

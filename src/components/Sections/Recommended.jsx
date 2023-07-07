@@ -7,7 +7,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import {Navigation} from 'swiper/modules';
 function Recommended() {
   return (
-    <div className='flex flex-col px-section py-4 gap-4'>
+    <div className='flex flex-col px-section py-10 gap-4'>
         <div className='w-full flex justify-between items-center'>
             <h1 className='text-xl font-medium'>Recommended</h1>
             <a href='#' className='text-sm text-darkBlue'>View all</a>

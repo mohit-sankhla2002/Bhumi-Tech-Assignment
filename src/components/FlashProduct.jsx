@@ -1,6 +1,5 @@
 import React from 'react'
-
-function FlashProduct({ img, title, price, itemLeft, totalItem }) {
+function FlashProduct({img, title, price, totalItem, itemLeft}) {
     const percentage = (itemLeft / totalItem) * 100;
     return <div className='bg-white flex px-6 py-3 gap-4 rounded-[15px] w-[25vw] items-center'>
         <img src={img} alt="image" className='w-[85px] h-[100px]' />

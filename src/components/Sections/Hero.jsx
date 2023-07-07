@@ -9,9 +9,9 @@ const Hero = () => {
         <Swiper
             effect={'coverflow'}
             centeredSlides={true}
-            slidesPerView={'1'}
+            slidesPerView={'auto'}
             coverflowEffect={{
-                rotate: 50,
+                rotate: 20,
                 stretch: 0,
                 depth: 200,
                 slideShadows: false,

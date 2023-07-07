@@ -6,7 +6,7 @@ const store = configureStore({
     reducer: {
         toggleCart: toggleCartSlice.reducer,
         cart: cartSlice.reducer,
-        user: userSliceReducer
+        user: userSliceReducer,
     }
 })
 
