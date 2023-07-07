@@ -42,7 +42,7 @@ const hotSale = [
   },
   {
     id: 20,
-    name: "PlayStation 5 Console (Disc Version) With Extra Contro...",
+    name: "PlayStation 5 Console (Disc Version) With Extra Controllers",
     discountedPrice: 1245.33,
     originalPrice: 1300,
     img: ps5,

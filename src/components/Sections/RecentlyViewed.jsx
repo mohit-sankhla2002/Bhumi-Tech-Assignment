@@ -8,7 +8,7 @@ import recentlyViewed from '../../constants/recently-viewed';
 import RecentlyViewedProduct from '../RecentlyViewedProduct';
 function RecentlyViewed() {
   return (
-    <div className='m-section flex flex-col'>
+    <div className='m-section flex flex-col gap-5'>
         <div className='flex justify-between'>
               <h3 className='text-xl font-medium'>Recently viewed</h3>
               <div className='flex gap-2'>
@@ -16,21 +16,24 @@ function RecentlyViewed() {
                   <RightArrowButton className={`rv-right-arrow-button`} />
               </div>
         </div>
-
-        <Swiper 
-            modules={[Navigation]}
-            navigation={{
-                prevEl: '.rv-left-arrow-button',
-                nextEl: '.rv-right-arrow-button'
-            }}
-            slidesPerView={5}
-        >
-            {recentlyViewed.map((product, index) => {
-                <SwiperSlide key={index}>
-                    <RecentlyViewedProduct name={product.title} price={product.price} stars={product.stars} ratings={product.ratings}/>
-                </SwiperSlide>
-            })}
-        </Swiper>    
+        <div>
+              <Swiper
+                  modules={[Navigation]}
+                  navigation={{
+                      prevEl: '.rv-left-arrow-button',
+                      nextEl: '.rv-right-arrow-button'
+                  }}
+                  slidesPerView={5}
+                  spaceBetween={"10"}
+              >
+                  {recentlyViewed.map((product, index) => {
+                      return <SwiperSlide key={index}>
+                          <RecentlyViewedProduct img={product.img} title={product.title} price={product.price} stars={product.stars} ratings={product.ratings} />
+                      </SwiperSlide>
+                  })}
+              </Swiper>  
+        </div>
+          
     </div>
   )
 }

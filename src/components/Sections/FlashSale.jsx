@@ -15,7 +15,7 @@ function FlashSale() {
                   {flashProducts.map((product, index) => (<FlashProduct key={index} img={product.img} title={product.title} price={product.price} totalItem={product.totalItems} itemLeft={product.itemsLeft} />))}
               </div>
               <div className='flex mt-[50px] justify-between'>
-                <p>pagination</p>
+                <p className='pagination'></p>
                 <p className='text-white font-semibold'>View More</p>
               </div>
         </div>

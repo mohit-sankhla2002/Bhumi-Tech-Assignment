@@ -5,7 +5,7 @@ function RecentlyViewedProduct(deal) {
     for (let i = 0; i < deal.stars; i++) {
         stars.push(<img src={star} className='w-[15px]' />)
     }
-    return <div className='flex p-2 gap-2 shadow-lg rounded-[15px]'>
+    return <div className='flex p-2 gap-2 border rounded-[15px]'>
         <img src={deal.img} alt={deal.name} className='w-[120px]' />
         <div className='flex flex-col justify-between py-3'>
             <p className='text-sm'>{deal.title}</p>

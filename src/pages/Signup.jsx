@@ -18,7 +18,7 @@ function Signup() {
         console.log(email, pass, confirmPass);
     };
     return (
-        <div className='flex flex-col gap-3 min-w-[500px] m-auto p-4 border-2 shadow-bs1 border-darkBlue'>
+        <div className='flex flex-col gap-3 min-w-[500px] m-auto p-4 border-2 shadow-bs1 border-darkBlue rounded-lg'>
             <h1 className='text-3xl font-bold text-center mb-10'>Signup</h1>
             <label htmlFor="email" className='text-xl font-medium'>Email</label>
             <input ref={emailRef} type='email' className='p-2 text-xl border-2 shadow-lg border-lightBlue rounded-xl' id='email' />

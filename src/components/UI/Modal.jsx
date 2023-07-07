@@ -7,7 +7,7 @@ const Backdrop = (props) => {
 }
 
 const Content = (props) => {
-    return <div className='z-50 fixed top-[20vh] left-[5%] w-[90%] flex items-center m-auto'>{props.children}</div>
+    return <div className='z-50 fixed top-[10vh] left-[5%] w-[90%] flex items-center m-auto'>{props.children}</div>
 };
 
 function Modal(props) {

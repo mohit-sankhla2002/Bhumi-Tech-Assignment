@@ -8,13 +8,12 @@ const Hero = () => {
     return (
         <Swiper
             effect={'coverflow'}
-            grabCursor={true}
             centeredSlides={true}
             slidesPerView={'1'}
             coverflowEffect={{
                 rotate: 50,
                 stretch: 0,
-                depth: 100,
+                depth: 200,
                 slideShadows: false,
             }}
             pagination={{
@@ -26,7 +25,6 @@ const Hero = () => {
                 enabled: true, 
                 delay: 5000,
             }}
-            delay={3000}
             navigation={{
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev'

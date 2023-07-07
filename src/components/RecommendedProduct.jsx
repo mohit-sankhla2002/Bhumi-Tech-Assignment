@@ -5,7 +5,7 @@ function RecommendedProduct({ img, title, originalPrice, discountedPrice, rating
         <div className='recommended-product flex flex-col justify-between'>
             <img src={img} />
             <div className='p-4'>
-                <p className='text-sm min-h-[50px]'>{title}</p>
+                <p className='text-sm min-h-[70px]'>{title}</p>
                 <p className='text-darkBlue'>${discountedPrice}</p>
                 <div className='flex justify-between items-center'>
                     <span className='text-sm line-through text-gray-500'>${originalPrice}</span>

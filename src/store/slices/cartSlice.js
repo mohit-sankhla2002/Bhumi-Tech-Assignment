@@ -38,6 +38,11 @@ const cartSlice = createSlice({
             const idx = state.items.findIndex(itm => itm.id === +id);
             if (state.items[idx].quantity === 1) {
               const filteredItems = state.items.filter((itm) => itm.id !== id);
+              if (filteredItems.length === 0) {
+                state.items=[];
+                state.totalAmount=0;
+                return;
+              }
               state.items = filteredItems;
             } else {
               state.items[idx].quantity--;

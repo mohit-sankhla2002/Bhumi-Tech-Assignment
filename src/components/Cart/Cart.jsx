@@ -14,7 +14,7 @@ function Cart() {
   console.log(cartItems);
   const cartIsEmpty = cartItems.length === 0;
   return (
-    <div className='bg-white flex flex-col w-full rounded-lg items-center p-[50px] max-h-[60vh]'>
+    <div className='bg-white flex flex-col w-full rounded-lg justify-center items-center p-[50px] h-[80vh]'>
       <h1 className='text-4xl mb-4'>Cart</h1>
       <div className='flex flex-col gap-4 w-[40%] overflow-y-scroll'>
       {cartIsEmpty && <h3 className='text-2xl text-center text-gray-600 font-medium'>Your cart is empty</h3>}
