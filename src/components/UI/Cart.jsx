@@ -1,9 +1,11 @@
 import cart from '../../assets/cart.svg';
 
-function Cart() {
+function Cart({onClick}) {
   return (
-    <div className='relative p-2 flex'>
-        <div className='absolute top-0 right-0 bg-darkBlue rounded-full text-sm text-white'>3</div>
+    <div onClick={onClick} className='relative'>
+        <div className='absolute w-[20px] h-[20px] -top-2 -right-2 bg-darkBlue rounded-full text-xs text-white z-10 flex items-center justify-center'>
+          <p>3</p>
+        </div>
         <img src={cart} className='w-[28px]'/>
     </div>
   )

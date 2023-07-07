@@ -25,9 +25,9 @@ function RecentlyViewed() {
             }}
             slidesPerView={5}
         >
-            {recentlyViewed.map((product) => {
-                <SwiperSlide key={product.id}>
-                    <RecentlyViewedProduct name={product.name} price={product.price} stars={product.stars} ratings={product.ratings}/>
+            {recentlyViewed.map((product, index) => {
+                <SwiperSlide key={index}>
+                    <RecentlyViewedProduct name={product.title} price={product.price} stars={product.stars} ratings={product.ratings}/>
                 </SwiperSlide>
             })}
         </Swiper>    

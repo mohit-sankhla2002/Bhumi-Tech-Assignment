@@ -12,7 +12,7 @@ function FlashSale() {
 
         <div className='flex flex-col'>
               <div className='grid grid-cols-2 gap-4'>
-                  {flashProducts.map((product) => (<FlashProduct key={product.id} img={product.img} title={product.title} price={product.price} totalItem={product.totalItems} itemLeft={product.itemsLeft} />))}
+                  {flashProducts.map((product, index) => (<FlashProduct key={index} img={product.img} title={product.title} price={product.price} totalItem={product.totalItems} itemLeft={product.itemsLeft} />))}
               </div>
               <div className='flex mt-[50px] justify-between'>
                 <p>pagination</p>

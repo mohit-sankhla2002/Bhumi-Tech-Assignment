@@ -3,7 +3,7 @@ import printer from '../assets/printer.png'
 
 const flashProducts = [
   {
-    id: 1,
+    id: 14,
     title: "Casio G-Shock Ana-Digi Quartz World Time 200m Black",
     img: watch1,
     price: 33.33,
@@ -11,7 +11,7 @@ const flashProducts = [
     itemsLeft: 24,
   },
   {
-    id: 2,
+    id: 15,
     title: "Canon LBP113w imageCLASS WiFi Laser Printer",
     img: printer,
     price: 33.33,

@@ -7,7 +7,7 @@ import speaker from '../assets/speaker2.png'
 
 const hotSale = [
   {
-    id: 1,
+    id: 16,
     name: "PVC Bean Bag Black 80x80x50centimeter",
     discountedPrice: 1245.33,
     originalPrice: 1300,
@@ -15,7 +15,7 @@ const hotSale = [
     rating: 4.5,
   },
   {
-    id: 2,
+    id: 17,
     name: "U2520D 25-Inch UltraSharp QHD USB-C Monitor Black",
     discountedPrice: 1245.33,
     originalPrice: 1300,
@@ -24,7 +24,7 @@ const hotSale = [
     discountBanner: 30,
   },
   {
-    id: 3,
+    id: 18,
     name: "Flip 5 Waterproof Portable Bluetooth Speaker Black",
     discountedPrice: 1245.33,
     originalPrice: 1300,
@@ -33,7 +33,7 @@ const hotSale = [
     discountBanner: 20,
   },
   {
-    id: 4,
+    id: 19,
     name: "MacBook Pro With Touch Bar And Touch ID, 13.3-Inch Display",
     discountedPrice: 1245.33,
     originalPrice: 1300,
@@ -41,7 +41,7 @@ const hotSale = [
     rating: 4.5,
   },
   {
-    id: 5,
+    id: 20,
     name: "PlayStation 5 Console (Disc Version) With Extra Contro...",
     discountedPrice: 1245.33,
     originalPrice: 1300,

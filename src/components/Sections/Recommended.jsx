@@ -25,8 +25,8 @@ function Recommended() {
             slidesPerView={5}
             spaceBetween={10}
           >
-            {recommendedProducts.map(product => {
-              return <SwiperSlide key={product.id}> <RecommendedProduct  img={product.img} title={product.name} rating={product.rating} originalPrice={product.originalPrice} discountedPrice={product.discountedPrice} discountBanner={product.discountBanner} /></SwiperSlide>;
+            {recommendedProducts.map((product, index) => {
+              return <SwiperSlide key={index}> <RecommendedProduct  img={product.img} title={product.name} rating={product.rating} originalPrice={product.originalPrice} discountedPrice={product.discountedPrice} discountBanner={product.discountBanner} /></SwiperSlide>;
             })}
           </Swiper>
         <RightArrowButton className={`rd-right-arrow-button`}/>

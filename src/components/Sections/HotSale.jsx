@@ -22,8 +22,8 @@ function HotSale() {
                     slidesPerView={5}
                     spaceBetween={10}
                 >
-                    {hotSale.map(product => {
-                        return <SwiperSlide key={product.id}> <HotSaleProduct img={product.img} title={product.name} rating={product.rating} originalPrice={product.originalPrice} discountedPrice={product.discountedPrice} discountBanner={product.discountBanner} /></SwiperSlide>;
+                    {hotSale.map((product, index) => {
+                        return <SwiperSlide key={index}> <HotSaleProduct img={product.img} title={product.name} rating={product.rating} originalPrice={product.originalPrice} discountedPrice={product.discountedPrice} discountBanner={product.discountBanner} /></SwiperSlide>;
                     })}
                 </Swiper>
                 <RightArrowButton className={`hs-right-arrow-button`} />

@@ -5,7 +5,7 @@ import car from '../assets/car.png'
 
 const classifiedProducts = [
     {
-        id: 1, 
+        id: 11, 
         name: "Holy Stone HS470 Foldable GPS RC Drone", 
         price: 300.98, 
         img: drone,
@@ -13,7 +13,7 @@ const classifiedProducts = [
         urgentSelling: true
     },
     {
-        id: 2, 
+        id: 12, 
         name: "Marshall Stockwell II Portable Speaker", 
         price: 300.98, 
         img: speaker,
@@ -21,7 +21,7 @@ const classifiedProducts = [
         urgentSelling: false
     },
     {
-        id: 3, 
+        id: 13, 
         name: "2020 Ford Mustang GT Fastback", 
         price: 300.98, 
         img: car,
@@ -29,7 +29,7 @@ const classifiedProducts = [
         urgentSelling: false
     },
     {
-        id: 4, 
+        id: 11, 
         name: "Holy Stone HS470 Foldable GPS RC Drone", 
         price: 300.98, 
         img: drone,
@@ -37,7 +37,7 @@ const classifiedProducts = [
         urgentSelling: true
     },
     {
-        id: 5, 
+        id: 12, 
         name: "Marshall Stockwell II Portable Speaker", 
         price: 300.98, 
         img: speaker,
@@ -45,7 +45,7 @@ const classifiedProducts = [
         urgentSelling: false
     },
     {
-        id: 6, 
+        id: 13, 
         name: "2020 Ford Mustang GT Fastback", 
         price: 300.98, 
         img: car,

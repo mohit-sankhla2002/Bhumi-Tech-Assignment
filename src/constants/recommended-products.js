@@ -6,7 +6,7 @@ import camera from '../assets/camera.png'
 
 const recommendedProducts = [
   {
-    id: 1,
+    id: 21,
     name: "iPhone 12 With Facetime 128GB Blue 5G Specs",
     discountedPrice: 1245.33,
     originalPrice: 1300,
@@ -14,7 +14,7 @@ const recommendedProducts = [
     rating: 4.5,
   },
   {
-    id: 2,
+    id: 22,
     name: "EOS M200 Mirrorless Camera With EF-M 15-45mm",
     discountedPrice: 1245.33,
     originalPrice: 1300,
@@ -23,7 +23,7 @@ const recommendedProducts = [
     discountBanner: 30,
   },
   {
-    id: 3,
+    id: 23,
     name: "Ultra Book Thin Laptop XL-01",
     discountedPrice: 1245.33,
     originalPrice: 1300,
@@ -32,7 +32,7 @@ const recommendedProducts = [
     discountBanner: 20,
   },
   {
-    id: 4,
+    id: 24,
     name: "Magic Perfume",
     discountedPrice: 1245.33,
     originalPrice: 1300,
@@ -40,7 +40,7 @@ const recommendedProducts = [
     rating: 4.5,
   },
   {
-    id: 5,
+    id: 25,
     name: "Convers Gray",
     discountedPrice: 1245.33,
     originalPrice: 1300,
@@ -48,7 +48,7 @@ const recommendedProducts = [
     rating: 4.5,
   },
   {
-    id: 6,
+    id: 21,
     name: "iPhone 12 With Facetime 128GB Blue 5G Specs",
     discountedPrice: 1245.33,
     originalPrice: 1300,
@@ -56,7 +56,7 @@ const recommendedProducts = [
     rating: 4.5,
   },
   {
-    id: 7,
+    id: 22,
     name: "EOS M200 Mirrorless Camera With EF-M 15-45mm",
     discountedPrice: 1245.33,
     originalPrice: 1300,
@@ -65,7 +65,7 @@ const recommendedProducts = [
     discountBanner: 30,
   },
   {
-    id: 8,
+    id: 23,
     name: "Ultra Book Thin Laptop XL-01",
     discountedPrice: 1245.33,
     originalPrice: 1300,
@@ -74,7 +74,7 @@ const recommendedProducts = [
     discountBanner: 20,
   },
   {
-    id: 9,
+    id: 24,
     name: "Magic Perfume",
     discountedPrice: 1245.33,
     originalPrice: 1300,
@@ -82,13 +82,14 @@ const recommendedProducts = [
     rating: 4.5,
   },
   {
-    id: 10,
+    id: 25,
     name: "Convers Gray",
     discountedPrice: 1245.33,
     originalPrice: 1300,
     img: shoes1,
     rating: 4.5,
   },
+  
 ];
 
 
