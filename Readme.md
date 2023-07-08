@@ -1,5 +1,5 @@
 ## Starting the Development server
 ```
-  npm start
+  npm install 
   npm run dev
 ```
