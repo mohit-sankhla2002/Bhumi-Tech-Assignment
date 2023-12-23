@@ -3,7 +3,7 @@ import flashProducts from '../../constants/flash-product'
 import FlashProduct from '../FlashProduct';
 import Countdown from '../Countdown';
 function FlashSale() {
-  const targetDate = new Date('2023-07-31T23:59:59');
+  const targetDate = new Date('2023-12-31T23:59:59');
   return (
     <div className='flash-sale bg-darkBlue mx-section py-10 shadow-bs2 flex items-center gap-4 border-2 border-blue-700'>
         <div className='flex flex-col max-w-[350px] gap-6 justify-between'>
